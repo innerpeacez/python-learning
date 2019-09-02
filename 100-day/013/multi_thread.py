@@ -20,6 +20,7 @@ def main():
     t2.join()
     end = time()
     print('总耗时:%.3f秒' % (end - start))
+
     pass
 
 
