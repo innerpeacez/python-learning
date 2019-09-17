@@ -2,7 +2,7 @@ from PIL import Image
 
 
 def main():
-    image = Image.open('./avatar-icon.jpg')
+    image = Image.open('./favicon.ico')
     size = 128, 128
     image.thumbnail(size)
     image.show()

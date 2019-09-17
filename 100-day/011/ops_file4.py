@@ -1,6 +1,6 @@
 def main():
     try:
-        with open('avatar-icon.jpg', 'rb') as fs1:
+        with open('favicon.ico', 'rb') as fs1:
             data = fs1.read()
             print(type(data))  # <class 'bytes'>
     except FileNotFoundError as e:
