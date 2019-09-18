@@ -1,9 +1,6 @@
 from django.contrib import admin
-from .models import Article, Reporter
-
+from . import models
 
 # Register your models here.
-
-@admin.register(Article)
-class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('pub_date', 'headline')
+admin.site.register(models.Article)
+admin.site.register(models.Reporter)
