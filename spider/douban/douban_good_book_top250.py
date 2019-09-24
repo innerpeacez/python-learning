@@ -56,7 +56,7 @@ def parserText(text, book_list):
     return book_list
 
 
-def sorted_boot_top250(book_list):
+def sortedBookTop250(book_list):
     tmp = sorted(book_list, key=itemgetter('评分'), reverse=True)
     for i in range(len(tmp)):
         tmp[i].update({"排名": i + 1})
@@ -75,7 +75,7 @@ def writeToFile(book_list):
 def main():
     text = getHtmlText(seed_url)
     book_list = parserText(text, books)
-    writeToFile(sorted_boot_top250(book_list))
+    writeToFile(sortedBookTop250(book_list))
     pass
 
 
