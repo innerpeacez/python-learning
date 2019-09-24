@@ -23,6 +23,9 @@ def main():
     print(soup.body.contents)
     print(len(soup.body.contents))
 
+    for link in soup(['a', 'b']):
+        print(link)
+
 
 if __name__ == '__main__':
     main()
